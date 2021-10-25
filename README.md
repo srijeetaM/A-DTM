@@ -1,5 +1,5 @@
 # A-DTM
-
+Adaptive Dynamic Thermal Manager
 
 Overview
 ============
