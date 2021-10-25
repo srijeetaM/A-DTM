@@ -1,0 +1,6 @@
+KernelName=pooling_1
+KernelSource=/DAG_8/cnn_1_P_4_1.cl
+workDimension=1
+globalWorkSize=2048
+inputBuffers=float,16384,0,0
+outputBuffers=float,4096,1,0

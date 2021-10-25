@@ -1,0 +1,38 @@
+##for trace_add_button file variables and functions
+
+counter = no_of rows of input ##incremented by add button
+a_dict = dictionary list 
+a_dict['global_id']= list to store global_id
+a_dict['unique_dag_id']=list to store kernel 
+a_dict['platform_id']=list to store platform_id cpu or gpu
+a_dict['platform']=list to store platform
+a_dict['deadline']=list to store deadline
+a_dict['wcet_cpu']=list to store wcet_cpu
+a_dict['wcet_gpu']=list to store wcet_gpu
+a_dict['input_arrival_time']=list to store input_arrival_time
+a_dict['hyper_period_entry']=list to store hyper_period_entry
+a_dict['input_task_period']=list to store input_task_period
+a_dict['frequency']=list to store frequency
+
+Convolution=-1                              #dag id for each kernel
+Matrix_Multiplications_2=-1
+Matxix_Multiplications_3=-1
+Matrix_Transpose_and_Vector_Multiplication=-1
+Scalar_Vector_and_Matrix_Multiplication=-1
+General_Matrix_Multiply=-1
+
+#selo functions for getting frequency drop down based on platform id input
+#save_trace1 function for saving the data to the file
+#text_file_3 for dag_info
+#text_file_4 for trace
+#
+
+#global_id_label for Label and similarly other labels
+
+#kernel_options - kernels
+
+#function inc_counter for getting input and storing in dictionary list 
+
+#button1 for Add button
+#button for saving file
+

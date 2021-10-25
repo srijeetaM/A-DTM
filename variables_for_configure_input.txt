@@ -1,0 +1,47 @@
+##variables for configure input file
+
+STR_LENGTH = StringVar()
+NumOfJobs =StringVar()
+NumCoresPerDevice = StringVar()
+NumofCPUs = StringVar()
+NumOfSensors = StringVar()
+NumOfTempBand = StringVar()
+PLATFORM_GPU = StringVar()
+PLATFORM_CPU = StringVar()
+G_BIG = StringVar()
+G_LITTLE = StringVar()
+C_BIG = StringVar()
+TempInterval = StringVar()
+numOfHyperperiod = StringVar()
+LOG_LEVEL=StringVar()
+LOG_SCHEDULER=StringVar()
+LOG_PROFILE=StringVar()
+CONTROLLER_MODE=StringVar()
+FACTOR=StringVar()
+SAFE_MODE=StringVar()
+EVENTS_ENABLE=StringVar()
+RACE_TO_IDLE=StringVar()
+time_buffer=StringVar()
+isProfileMode=StringVar()
+micro_kernel_device=StringVar()
+refresh_data_per_hyperperiod=StringVar()
+monitorTemp=StringVar()
+generatePlot=StringVar()
+LOCAL_RECOVERY_ENABLE=StringVar()
+GLOBAL_RECOVERY_ENABLE=StringVar()
+THERMAL_THRESHOLD_H=StringVar()
+THERMAL_THRESHOLD_L=StringVar()
+CREATE_SUB_KERNEL=StringVar()
+READ_INPUT_DATA=StringVar()
+FREQUENCY_MODE=StringVar()
+MIGRATION_MODE=StringVar()
+TASK_SHIFT_MODE=StringVar()
+
+
+#STR_LENGTH_entry  ##for entry box input
+
+#STR_LENGTH_text ##for text label
+
+##save_info() function to save the variables to the file
+
+button # to save the data

@@ -1,0 +1,28 @@
+##variables for tinfo file
+
+##save_info function for saving the no_of_tasks
+
+## a for taking input, entry box
+##no_of_tasks stores the value of tasks we enter
+
+##counter is used to create widgets based on number of tasks in while loop
+
+##save_path used to store to path foe saving the file 
+
+##export_source_file() function to save the source file
+
+## kernel_type_options 
+
+##source_file box
+
+## btn_Save   button to save the source file 
+
+##show_info1()  function to save the tinfo file
+
+## work_dim_options= [1,2,3,]
+
+##button_tinfo    button to save the tinfo file i.e kernelname, work_dimention, global_work_size
+
+##show_input()   function  for input buffers, called from the button for_input_buffer
+
+##show_output()   function for output buffers, called from the button for_output buffer

@@ -1,0 +1,7 @@
+KernelName=gemm
+KernelSource=/DAG_1/gemm_1024.cl
+workDimension=2
+globalWorkSize=1024,1024,1
+inputBuffers=float,1048576,0,0,float,1048576,1,0
+outputBuffers=float,1048576,2,0
+FLOPS_per_thread=16
