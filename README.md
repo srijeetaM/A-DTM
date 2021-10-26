@@ -34,8 +34,6 @@ Project Hierarchy
     ├── <b>temperature</b> (Folder containing thermal data of the platform obtained from the thermal sensors while running each OpenCL task.)
     ├── <b>time</b> (Folder containing latency details of each OpenCL task.)
     ├── <b>output</b> (Folder containing data dump outputs after execution of individual OpenCL kernels )
-    ├── <b>kernel_src</b> (Folder containing kernel source files used by framework)
-    ├── <b>info</b> (Folder containing sample JSON Kernel Specification Files)
   </code>
   </pre>
  
@@ -43,7 +41,8 @@ Project Hierarchy
 Software Dependencies
 ----------------------
 
-+ Python 2.7
++ Python 2.7 
++ Tkinter python GUI library
 + C++ 4.2
 + OpenCL Runtime Device Drivers (Minimum 1.2)
   - Intel
