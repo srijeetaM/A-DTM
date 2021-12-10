@@ -1,15 +1,14 @@
 # A-DTM
 Adaptive Dynamic Thermal Manager
-
-Overview
-============
+=================================
 
 Recent trends in real-time applications have raised the demand for high-throughput embedded platforms with integrated CPU-GPU based Systems-On-Chip (SoCs). The enhanced performance of such SoCs, however,comes at the cost of increased power consumption, resulting in significant heat dissipation and high on-chip temperatures. The prolonged occurrences of high on-chip temperature can cause accelerated in-circuit ageing, which severely degrades the long-term performance and reliability of the chip. Violation of thermal constraintsleads to on-board dynamic thermal management kicking-in, which may result in timing unpredictability for real-time tasks due to transient performance degradation. Recent work in adaptive software design have explored this issue from a control theoretic stand-point, striving for smooth thermal envelopes by tuning the core frequency.Existing techniques do not handle thermal violations for periodic real-time task sets in the presence of dynamic events like change of task periodicity, more so in the context of heterogeneous SoCs with integratedCPU-GPUs.
 
 This work presents an OpenCL runtime extension for thermal-aware scheduling of periodic, real-time tasks on heterogeneous multi-core platforms. The framework A-DTM or Adaptive Dynamic Thermal Manager mitigates dynamic thermal violations by adaptively tuning task mapping parameters, with the eventual control objective of satisfying both platform-level thermal constraints and task-level deadline constraints. Multiple platform-level control actions like task migration, frequency tuning and idle slot insertion is used as the task mapping parameters. 
-
-<img width="964" alt="A-DTM overview" src="https://github.com/srijeetaM/A-DTM/blob/master/TECS_workflow_new.pdf">
+![alt text](src="https://github.com/srijeetaM/A-DTM/blob/master/TECS_workflow_new.pdf")
 The work flow of the framework is depicted in the given figure. For a given hyper-period, the framework dispatch each task in the platform P folowing the last updated schedule S. The thermal profile during the execution of the each task is analysed to identify the peak temperature in each device in the platform. If there is no thermal violation, theframework does not take any action and continues with the existing task mapping decisions in S.If there is any kind of thermal violation, the temperature is reduced by the recovery controller that work in two distinct modes - local and global recovery mode. The details work mechanism is covered in our <a href="https://dl.acm.org/doi/10.1145/3477028"> paper</a> published in ACM Transactions on Embedded Computing Systems.
+
+
 
 
 The framework is build on OpenCL,C++ and python. We briefly present the project hierarchy and a short description for every important folder and file present in the project. An initial setup description is also provided for OpenCL supported heterogeneous platform.
