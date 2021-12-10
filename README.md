@@ -10,7 +10,6 @@ The work flow of the framework is depicted in the given figure. For a given hype
 
 
 
-
 The framework is build on OpenCL,C++ and python. We briefly present the project hierarchy and a short description for every important folder and file present in the project. An initial setup description is also provided for OpenCL supported heterogeneous platform.
 
 
