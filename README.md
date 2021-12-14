@@ -99,6 +99,18 @@ $ python input_initial_schedule.py
 ![task input details](input2.png?style=centerme)
 
 
++ Taking inputs for the initial schedule of task set
+
+    * Input the number of tasks to be scheduled
+    * Input the details of each tasks such as-
+        * Source code of the OpenCL kernel
+        * Details of inputs and output buffers 
+        * Kernel parameters like work dimension size, global and local worksize
+
+
+![task initial schedule details](input3.png?style=centerme)
+
+
 #### To test:
 + To run program
 ```sh
