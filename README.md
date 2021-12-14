@@ -84,13 +84,14 @@ $ python input_kernel_files.py
 $ python input_initial_schedule.py
 ```
 
-+Input formats
+####  Input formats:
 
 #### To test:
 + To run program
 ```sh
 $ sudo taskset -c 4-7 ./adtm trace/trace_<counter>.stats ./dag_history/dag_history_<counter>.stats 
 ```
-+Output formats
+
+####  Output formats:
 
 
