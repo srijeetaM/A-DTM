@@ -96,7 +96,7 @@ $ python input_initial_schedule.py
     * Kernel parameters like work dimension size, global and local worksize
 
 
-![task input details](input2.png? width="400" height="790")
+![task input details](input2.png?style=centerme)
 
 
 #### To test:
