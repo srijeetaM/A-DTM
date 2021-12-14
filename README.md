@@ -52,11 +52,8 @@ Software Dependencies
 
 + Python 2.7 
 + Tkinter python GUI library
-+ C++ 4.2
++ C++ 4.2 Standard Library headers
 + OpenCL Runtime Device Drivers (Minimum 1.2)
-  - Intel
-  - AMD
-  - NVIDIA
 + PoCL v1.6
 
 Platform Setup
@@ -87,11 +84,13 @@ $ python input_kernel_files.py
 $ python input_initial_schedule.py
 ```
 
++Input formats
+
 #### To test:
 + To run program
 ```sh
 $ sudo taskset -c 4-7 ./adtm trace/trace_<counter>.stats ./dag_history/dag_history_<counter>.stats 
 ```
-
++Output formats
 
 
