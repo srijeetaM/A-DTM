@@ -88,9 +88,11 @@ $ python input_initial_schedule.py
 ```
 
 + Taking inputs for task set
++Input the number of tasks to be scheduled
++Input the details of tasks such as-
 
+![A-DTM overview](input2.png?style=centerme)
 
-![A-DTM overview](TECS_workflow_new1.png?style=centerme)
 
 #### To test:
 + To run program
