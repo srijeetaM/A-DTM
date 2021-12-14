@@ -77,6 +77,9 @@ Framework commands
 $ g++ main.cpp -O3 -lm -lOpenCL -lpthread -I /usr/include/CL_1_2/ -o adtm
 ```
 
+
+####  Input formats:
+
 + To take inputs
 ```sh
 $ python input_framework_parameters.py 
@@ -84,7 +87,6 @@ $ python input_kernel_files.py
 $ python input_initial_schedule.py
 ```
 
-####  Input formats:
 
 #### To test:
 + To run program
