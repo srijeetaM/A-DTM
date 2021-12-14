@@ -87,6 +87,10 @@ $ python input_kernel_files.py
 $ python input_initial_schedule.py
 ```
 
++ Taking inputs for task set
+
+
+![A-DTM overview](TECS_workflow_new1.png?style=centerme)
 
 #### To test:
 + To run program
