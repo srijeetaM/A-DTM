@@ -90,10 +90,10 @@ $ python input_initial_schedule.py
 + Taking inputs for task set
 
 +Input the number of tasks to be scheduled
-
 +Input the details of each tasks such as-
 +++Source code of the OpenCL kernel
-+++Details of inputs buffers
++++Details of inputs and output buffers 
++++Kernel aprameters like dimension size, global and local worksize
 
 
 ![A-DTM overview](input2.png?style=centerme)
