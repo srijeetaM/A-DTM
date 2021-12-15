@@ -67,6 +67,12 @@ Platform Setup
 $ sudo echo 90000 | sudo tee /sys/devices/virtual/thermal/thermal_zone{0,1,2,3}/trip_point_4_temp
 ```
 
+
+Framework overview
+-------------------
+
+
+
 Framework commands
 -------------------
 
