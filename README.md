@@ -128,9 +128,9 @@ $ sudo taskset -c 4-7 ./adtm trace/trace.stats dag_history/dag_history.stats
 ```
 
 ####  Output formats:
-+ The output files are gerenerated and dumped in the following sub-folders in the folder output
-    * log folder containing log files generated as a result of running the framework
-    * temperature folder containing thermal data of the platform obtained from the thermal sensors per hyper-period
-    * time folder containing latency details of each OpenCL task
-    * output folder containing data dump outputs after execution of individual OpenCL kernels 
++ The output files are gerenerated and dumped in the following sub-folders in the folder <b>output</b>
+    * <b>log</b> folder containing log files generated as a result of running the framework
+    * <b>temperature</b> folder containing thermal data of the platform obtained from the thermal sensors per hyper-period
+    * <b>time</b> folder containing latency details of each OpenCL task
+    * <b>output</b> folder containing data dump outputs after execution of individual OpenCL kernels 
 
