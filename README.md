@@ -40,7 +40,7 @@ Project Hierarchy
 └── <b>dag_structure</b> (Folder containing the structure of each task in the task set .)
 └── <b>output</b> (Folder containing all the output of the framework.)
     ├── <b>log</b> (Folder containing log files generated as a result of running the framework.)
-    ├── <b>temperature</b> (Folder containing thermal data of the platform obtained from the thermal sensors while running each OpenCL task.)
+    ├── <b>temperature</b> (Folder containing thermal data of the platform obtained from the thermal sensors per hyper-period.)
     ├── <b>time</b> (Folder containing latency details of each OpenCL task.)
     ├── <b>output</b> (Folder containing data dump outputs after execution of individual OpenCL kernels )
   </code>
@@ -120,5 +120,9 @@ $ sudo taskset -c 4-7 ./adtm trace/trace_<counter>.stats ./dag_history/dag_histo
 ```
 
 ####  Output formats:
-
++ The output files are gerenerated and dumped in the following sub-folders in the folder output
+* log folder containing log files generated as a result of running the framework
+* temperature folder containing thermal data of the platform obtained from the thermal sensors per hyper-period
+* time folder containing latency details of each OpenCL task
+* output folder containing data dump outputs after execution of individual OpenCL kernels 
 
