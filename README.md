@@ -6,7 +6,7 @@ Recent trends in real-time applications have raised the demand for high-throughp
 
 This work presents an OpenCL runtime extension for thermal-aware scheduling of periodic, real-time tasks on heterogeneous multi-core platforms. The framework A-DTM or Adaptive Dynamic Thermal Manager mitigates dynamic thermal violations by adaptively tuning task mapping parameters, with the eventual control objective of satisfying both platform-level thermal constraints and task-level deadline constraints. Multiple platform-level control actions like task migration, frequency tuning and idle slot insertion are used as the task mapping parameters. 
 
-![A-DTM overview](TECS_workflow_new1.png?style=centerme)
+![A-DTM workflow](TECS_workflow_new1.png?style=centerme)
 
 
 The work flow of the framework is depicted in the given figure. For a given hyper-period, the framework dispatch each task in the platform P folowing the last updated schedule S. The thermal profile during the execution of the each task is analysed to identify the peak temperature in each device in the platform. If there is no thermal violation, the framework does not take any action and continues with the existing task mapping decisions in S. If there is any kind of thermal violation, the temperature is reduced by the recovery controller that work in two distinct modes - local and global recovery mode. In the global recovery mode, a closed feedback loop is used to adaptively change the task mapping of the tasks responsible for thermal violation. It takes suitable control actions such as modifying device frequency, migrating task from hotter to cooler device, increasing idleness between consecutive tasks. In this context, feedback refers to the difference in expected and the actual performance with respect to peak temperature and latency of the concerned task. Based on the observed feedback, the current thermal behaviour and the resource availability of the platform P, a control action is selected such that the peak temperature drops below the thermal threshold while ensuring there is no deadline violation.
@@ -70,7 +70,7 @@ $ sudo echo 90000 | sudo tee /sys/devices/virtual/thermal/thermal_zone{0,1,2,3}/
 
 Framework overview
 -------------------
-
+![A-DTM framework overview](adtm.png?style=centerme)
 
 
 Framework commands
@@ -117,7 +117,7 @@ $ python input_initial_schedule.py
 
 
 
-![task initial schedule details](input3.png?style=centerme)
+![ initial task mapping](input3.png?style=centerme)
 
 + Taking details of the initial configuration of the framework such as
     * Number of devices in platform
