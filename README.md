@@ -92,20 +92,22 @@ $ python input_initial_schedule.py
     * Input the number of tasks to be scheduled
     * Input the details of each tasks such as-
         * Source code of the OpenCL kernel
-        * Details of inputs and output buffers 
+        * Details of inputs and output buffers such as data type, size, position in argument list 
         * Kernel parameters like work dimension size, global and local worksize
 
 
 ![task input details](input2.png?style=centerme)
 
 
-+ Taking inputs for the initial schedule of task set
-
-    * Input the number of tasks to be scheduled
-    * Input the details of each tasks such as-
-        * Source code of the OpenCL kernel
-        * Details of inputs and output buffers 
-        * Kernel parameters like work dimension size, global and local worksize
++ Taking details of the initial mapping choices for each instance of tasks
+ 
+    * Device choice such as CPU or GPU
+    * Device frequency
+    * Worst Case Execution Time (WCET) in CPU and GPU
+    * Task period
+    * Absolute deadline in the hyper-period
+    * Absolute arrival time in the hyper-period
+    * Hyper-period instance when task is added
 
 
 ![task initial schedule details](input3.png?style=centerme)
