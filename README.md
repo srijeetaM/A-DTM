@@ -87,8 +87,9 @@ $ python input_kernel_files.py
 $ python input_initial_schedule.py
 ```
 
-+ Taking inputs for task set
++ These commands generate intermediate files- dag_history.stats, trace.stats and configure_input.txt that are taken as input by thee framework A-DTM.
 
++ Taking inputs for task set
     * Input the number of tasks to be scheduled
     * Input the details of each tasks such as-
         * Source code of the OpenCL kernel
@@ -99,8 +100,7 @@ $ python input_initial_schedule.py
 ![task input details](input2.png?style=centerme)
 
 
-+ Taking details of the initial mapping choices for each instance of tasks
- 
++ Taking details of the initial mapping choices for each instance of tasks such as
     * Device choice such as CPU or GPU
     * Device frequency
     * Worst Case Execution Time (WCET) in CPU and GPU
@@ -110,13 +110,21 @@ $ python input_initial_schedule.py
     * Hyper-period instance when task is added
 
 
+
 ![task initial schedule details](input3.png?style=centerme)
 
++ Taking details of the initial configuration of the framework such as
+    * Number of devices in platform
+    * Number of cores per device
+    * Number of thermal sensors
+    * Thermal sensing period
+    * Thermal thresholds
+    
 
 #### To test:
 + To run program
 ```sh
-$ sudo taskset -c 4-7 ./adtm trace/trace_<counter>.stats ./dag_history/dag_history_<counter>.stats 
+$ sudo taskset -c 4-7 ./adtm trace/trace.stats dag_history/dag_history.stats 
 ```
 
 ####  Output formats:
